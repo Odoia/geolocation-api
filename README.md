@@ -1,24 +1,28 @@
-# README
+# Geolocation API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project allows you to search for an address using latitude and longitude or the zip code(cep). It uses Ruby 2.7.1, Rails 6.
+## What do you need to run the project
 
-Things you may want to cover:
+Clone this project and run those commands in sequence:
 
-* Ruby version
+- bundle install
+- rails s
 
-* System dependencies
+## How to get address by geolocation 
 
-* Configuration
+You need to access 'GET: api/v1/address' route passing a latitude and longitude in body.
 
-* Database creation
+## How to get address by zip code(cep)
 
-* Database initialization
+You need to access 'GET: api/v1/address' route passing a zip code(cep) in body.
 
-* How to run the test suite
+## Sample Images
 
-* Services (job queues, cache servers, search engines, etc.)
+Mind Map:
+![](https://github.com/quero-edu/scripts_verticais/blob/geolocation/scripts/geolocation-api/project_images/mind%20map.png?raw=true)
 
-* Deployment instructions
+Get by geolocation:
+![](https://github.com/quero-edu/scripts_verticais/blob/geolocation/scripts/geolocation-api/project_images/by%20geolocation.png?raw=true)
 
-* ...
+Get by Cep:
+![](https://github.com/quero-edu/scripts_verticais/blob/geolocation/scripts/geolocation-api/project_images/by%20cep.png?raw=true)

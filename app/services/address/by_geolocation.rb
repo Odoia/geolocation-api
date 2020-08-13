@@ -1,6 +1,6 @@
 module Services
   module Address
-    class ByGeolocation 
+    class ByGeolocation
 
       def initialize(geolocation:)
         @latitude  = geolocation.first
@@ -11,10 +11,12 @@ module Services
         full_address_by_geolocation
       end
 
+      private
+
       attr_reader :latitude, :longitude
 
       def full_address_by_geolocation
-        result = Geocoder.search([latitude,longitude])
+        result = Geocoder.search([latitude, longitude])
         address_presenter(address: result)
       end
 
