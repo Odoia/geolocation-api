@@ -1,7 +1,7 @@
 module Api
   module V1
     class AddressController < ApplicationController
-      before_action :address_params, only: %i[show]
+      before_action :address_params, only: %i[show] 
 
       def show
         result = address_params['cep'].blank? ? geolocation_service : cep_service
